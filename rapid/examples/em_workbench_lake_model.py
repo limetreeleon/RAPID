@@ -177,7 +177,7 @@ def optimize_lake_problem(use_original_R_metrics=False, demo=True):
         scenarios = sample_uncertainties(lake_model, n_scenarios)
         nfe = 1000 if demo else 50000  # number of function evaluations
 
-        # Needed un Linux-based machines
+        # Needed on Linux-based machines
         multiprocessing.set_start_method('spawn', True)
 
         # Run optimisation
